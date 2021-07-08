@@ -36,12 +36,12 @@ export function activate(context: vscode.ExtensionContext) {
 
           // create the directory and init file
           vscode.workspace.fs.createDirectory(dirPath).then(() => {
-            // open the explorer to this directory, in case the parent was
-            // collapsed.
-            vscode.commands.executeCommand("revealInExplorer", dirPath);
             // create the __init__.py file here
             wsEdit.createFile(filePath, { ignoreIfExists: true });
             vscode.workspace.applyEdit(wsEdit);
+            // open the explorer to this directory, in case the parent was
+            // collapsed.
+            vscode.commands.executeCommand("revealInExplorer", dirPath);
           });
         });
     }
