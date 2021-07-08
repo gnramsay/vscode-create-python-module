@@ -4,6 +4,11 @@
   "description": "Creates a Blank Python module under the selected folder",
   "publisher": "gnramsay",
   "version": "0.0.1",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gnramsay/vscode-create-python-module.git"
+  },
   "engines": {
     "vscode": "^1.57.0"
   },
