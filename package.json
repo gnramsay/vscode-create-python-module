@@ -1,12 +1,12 @@
 {
   "name": "create-python-module",
-  "displayName": "Create a blank Python Module",
+  "displayName": "Create Blank Python Module",
   "description": "Creates a Blank Python module under the selected folder",
   "publisher": "gnramsay",
   "author": {
     "name": "Grant Ramsay"
   },
-  "version": "0.0.2",
+  "version": "0.0.3",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -22,9 +22,6 @@
     "vscode",
     "python",
     "module"
-  ],
-  "extensionKind": [
-    "ui"
   ],
   "activationEvents": [
     "onCommand:create-python-module.create"

@@ -1,6 +1,5 @@
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
-import { WSAEADDRINUSE } from "constants";
 import * as vscode from "vscode";
 
 // this method is called when your extension is activated
@@ -26,13 +25,21 @@ export function activate(context: vscode.ExtensionContext) {
           if (!selection) {
             return;
           }
+          // create a WorkspaceEdit object
           const wsEdit = new vscode.WorkspaceEdit();
+          // path to the folder to be created
           const dirPath = vscode.Uri.file(`${target.path}/${selection}`);
+          // path to the init file
           const filePath = vscode.Uri.file(
             `${target.path}/${selection}/__init__.py`
           );
 
+          // create the directory and init file
           vscode.workspace.fs.createDirectory(dirPath).then(() => {
+            // open the explorer to this directory, in case the parent was
+            // collapsed.
+            vscode.commands.executeCommand("revealInExplorer", dirPath);
+            // create the __init__.py file here
             wsEdit.createFile(filePath, { ignoreIfExists: true });
             vscode.workspace.applyEdit(wsEdit);
           });
