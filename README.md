@@ -17,7 +17,8 @@ missing :
 - Tests
 - Error Checking
 - Proper README
-- Add the proper file path 'slash' depending on OS.
+
+-
 
 ## Requirements
 
