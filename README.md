@@ -1,4 +1,4 @@
-# create-python-module README
+# create-python-module
 
 Duplicates the useful functionality in PyCharm whereby you can create a
 directory and populate it with an `__init__.py` file with one command.

@@ -31,7 +31,7 @@ export function activate(context: vscode.ExtensionContext) {
           const basePath = vscode.Uri.file(target.path);
           const dirPath = vscode.Uri.joinPath(basePath, selection);
           const filePath = vscode.Uri.joinPath(
-            dirPath, '__init.py'
+            dirPath, '__init__.py'
           );
 
           // create the directory and init file

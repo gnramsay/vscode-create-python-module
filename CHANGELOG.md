@@ -11,3 +11,10 @@
 ## [1.0.2] - 2021-07-23
 
 - First public release to VSCode Marketplace.
+
+## [1.0.3] - 2021-07-23
+
+### Fixed
+
+- Typo in refactoring led to the file `__init.py` being created rather
+  than the correct `__init__.py`
