@@ -6,6 +6,7 @@
   "author": {
     "name": "Grant Ramsay"
   },
+  "icon": "images/icon.png",
   "version": "1.0.1",
   "license": "MIT",
   "repository": {
@@ -16,12 +17,14 @@
     "vscode": "^1.57.0"
   },
   "categories": [
-    "Other"
+    "Other",
+    "Programming Languages"
   ],
   "keywords": [
     "vscode",
     "python",
-    "module"
+    "module",
+    "__init__"
   ],
   "activationEvents": [
     "onCommand:create-python-module.create"
