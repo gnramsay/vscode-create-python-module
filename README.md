@@ -3,7 +3,7 @@
 Duplicates the useful functionality in PyCharm whereby you can create a
 directory and populate it with an `__init__.py` file with one command.
 
-![demo image](Images/readme.gif)
+![demo image](images/readme.gif)
 
 ## Installation
 
