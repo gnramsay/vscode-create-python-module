@@ -34,9 +34,6 @@ export function activate(context: vscode.ExtensionContext) {
             dirPath, '__init.py'
           );
 
-          console.log("basePath", basePath);
-          console.log("dirPath", dirPath);
-          console.log("filePath", filePath);
           // create the directory and init file
           vscode.workspace.fs.createDirectory(dirPath).then(() => {
             // create the __init__.py file here
