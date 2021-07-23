@@ -28,12 +28,15 @@ export function activate(context: vscode.ExtensionContext) {
           // create a WorkspaceEdit object
           const wsEdit = new vscode.WorkspaceEdit();
           // path to the folder to be created
-          const dirPath = vscode.Uri.file(`${target.path}/${selection}`);
-          // path to the init file
-          const filePath = vscode.Uri.file(
-            `${target.path}/${selection}/__init__.py`
+          const basePath = vscode.Uri.file(target.path);
+          const dirPath = vscode.Uri.joinPath(basePath, selection);
+          const filePath = vscode.Uri.joinPath(
+            dirPath, '__init.py'
           );
 
+          console.log("basePath", basePath);
+          console.log("dirPath", dirPath);
+          console.log("filePath", filePath);
           // create the directory and init file
           vscode.workspace.fs.createDirectory(dirPath).then(() => {
             // create the __init__.py file here
