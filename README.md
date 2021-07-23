@@ -35,3 +35,7 @@ None known (yet)
 ### 0.0.x
 
 Initial Internal testing Releases.
+
+### 1.0.0
+
+First public release.
