@@ -8,6 +8,6 @@
     needed
   - [0.0.4] Don't hardcode path separator
 
-## [1.0.0] - 2021-07-23
+## [1.0.2] - 2021-07-23
 
 - First public release to VSCode Marketplace.
