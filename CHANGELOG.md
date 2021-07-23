@@ -7,3 +7,7 @@
   - [0.0.3] Select the created module in the Explorer window and unfold if
     needed
   - [0.0.4] Don't hardcode path separator
+
+## [1.0.0] - 2021-07-23
+
+- First public release to VSCode Marketplace.

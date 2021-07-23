@@ -18,8 +18,6 @@ missing :
 - Error Checking
 - Proper README
 
--
-
 ## Requirements
 
 Just VSCode.
