@@ -12,7 +12,7 @@
 
 - First public release to VSCode Marketplace.
 
-## [1.0.3] - 2021-07-23
+## [1.0.4] - 2021-07-23
 
 ### Fixed
 
